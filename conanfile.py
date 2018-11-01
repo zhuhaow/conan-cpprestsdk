@@ -39,21 +39,21 @@ class CppRestSDKConan(ConanFile):
             del self.options.fPIC
 
     def requirements(self):
-        self.requires.add("OpenSSL/1.0.2o@conan/stable")
+        self.requires.add("OpenSSL/1.1.0i@conan/stable")
         if not self.options.exclude_compression:
             self.requires.add("zlib/1.2.11@conan/stable")
         if not self.options.exclude_websockets:
             self.requires.add("websocketpp/0.7.0@bincrafters/stable")
-        self.requires.add("boost_random/1.66.0@bincrafters/stable")
-        self.requires.add("boost_system/1.66.0@bincrafters/stable")
-        self.requires.add("boost_thread/1.66.0@bincrafters/stable")
-        self.requires.add("boost_filesystem/1.66.0@bincrafters/stable")
-        self.requires.add("boost_chrono/1.66.0@bincrafters/stable")
-        self.requires.add("boost_atomic/1.66.0@bincrafters/stable")
-        self.requires.add("boost_asio/1.66.0@bincrafters/stable")
-        self.requires.add("boost_date_time/1.66.0@bincrafters/stable")
-        self.requires.add("boost_regex/1.66.0@bincrafters/stable")
-        self.requires.add("cmake_findboost_modular/1.66.0@bincrafters/stable")
+        self.requires.add("boost_random/1.68.0@bincrafters/stable")
+        self.requires.add("boost_system/1.68.0@bincrafters/stable")
+        self.requires.add("boost_thread/1.68.0@bincrafters/stable")
+        self.requires.add("boost_filesystem/1.68.0@bincrafters/stable")
+        self.requires.add("boost_chrono/1.68.0@bincrafters/stable")
+        self.requires.add("boost_atomic/1.68.0@bincrafters/stable")
+        self.requires.add("boost_asio/1.68.0@bincrafters/stable")
+        self.requires.add("boost_date_time/1.68.0@bincrafters/stable")
+        self.requires.add("boost_regex/1.68.0@bincrafters/stable")
+        self.requires.add("cmake_findboost_modular/1.68.0@bincrafters/stable")
 
     def source(self):
         source_url = "https://github.com/Microsoft/cpprestsdk"
